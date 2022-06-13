@@ -1,0 +1,24 @@
+pre[class*="language-"] {
+    border-radius: 0.7em;
+    font-size: 0.8em;
+}
+
+div[class=gatsby-code-title] {
+    display: block;
+    position: relative;
+    width: 100%;
+    top: 12px;
+    font-size: 0.8em;
+  }
+  
+div[class=gatsby-code-title] > span {
+    display: inline;
+    position: relative;
+    color: #555;
+    background: #ccc;
+    font-weight: 500;
+    border-radius: 0.5em;
+    margin: 0px;
+    padding: 5px 10px;
+    left: 16px;
+}
