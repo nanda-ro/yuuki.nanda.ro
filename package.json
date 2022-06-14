@@ -4,6 +4,8 @@
   "description": "yuuki.nanda.ro",
   "main": "index.js",
   "scripts": {
+    "develop": "gatsby develop",
+    "build": "gatsby build",
     "test": "exit 1"
   },
   "author": "Yuuki Sakakibara",
@@ -27,5 +29,8 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-helmet": "^6.1.0"
+  },
+  "devDependencies": {
+    "firebase-tools": "^11.1.0"
   }
 }
