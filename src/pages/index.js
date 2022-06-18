@@ -8,18 +8,19 @@ const Home = ({ data }) => {
   const { posts } = data.blog
 
   return (
-    <Grid container>
-      <Grid item xs={12}>
-        <Header />
+    <>
+      <Header />
+      <Grid container>
+        <Grid item xs={12}>
+          <Box sx={{ my: 20 }}>
+            <Typography variant="h1" align="center">
+              Hi.
+            </Typography>
+          </Box>
+        </Grid>
       </Grid>
-      <Grid item xs={12}>
-        <Box sx={{ my: 20 }}>
-          <Typography variant="h1" align="center">
-            Hi.
-          </Typography>
-        </Box>
-      </Grid>
-    </Grid>
+      <Footer />
+    </>
   )
 }
 

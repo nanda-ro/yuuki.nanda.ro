@@ -12,31 +12,31 @@ const BlogPost = ({ data }) => {
   const post = data.mdx
 
   return (
-    <Grid container>
-      <Grid item xs={12}>
-        <Header />
+    <>
+      <Header />
+      <Container>
+      <Grid container maxWidth="lg">
+        <Grid item xs={12} sm={8}>
+          <Container>
+            <Box sx={{ my: 4 }}>
+            <Typography variant="h4">{post.frontmatter.title}</Typography>
+            <Typography variant="body1">
+              <MDXProvider>
+                <MDXRenderer>
+                  {post.body}
+                </MDXRenderer>
+              </MDXProvider>
+            </Typography>
+            </Box>
+          </Container>
+        </Grid>
+        <Grid item xs={12} sm={4}>
+          <Sidebar date={post.frontmatter.date} />
+        </Grid>
       </Grid>
-      <Grid item xs={12} sm={7}>
-        <Container maxWidth="sm">
-          <Box sx={{ my: 4 }}>
-          <Typography variant="h4">{post.frontmatter.title}</Typography>
-          <Typography variant="body1">
-            <MDXProvider>
-              <MDXRenderer>
-                {post.body}
-              </MDXRenderer>
-            </MDXProvider>
-          </Typography>
-          </Box>
-        </Container>
-      </Grid>
-      <Grid item xs={12} sm={5}>
-        <Sidebar date={post.frontmatter.date} />
-      </Grid>
-      <Grid item xs={12}>
-        <Footer />
-      </Grid>
-    </Grid>
+      </Container>
+      <Footer />
+    </>
   );
 };
 

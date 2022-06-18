@@ -1,6 +1,10 @@
 pre[class*="language-"] {
-    border-radius: 0.7em;
+    border-radius: 0.8em;
     font-size: 0.8em;
+}
+
+code[class*="language-"] {
+    white-space: pre-wrap;
 }
 
 div[class=gatsby-code-title] {

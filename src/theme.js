@@ -28,7 +28,13 @@ const theme = createTheme({
     },
     MuiButtonBase: {
       defaultProps: {
-        disableRipple: true
+        disableRipple: true,
+      },
+    },
+    MuiLink: {
+      defaultProps: {
+        color: '#000000',
+        underline: 'hover',
       },
     },
   },
