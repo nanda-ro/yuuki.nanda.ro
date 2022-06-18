@@ -26,7 +26,6 @@ pip install findmypy
 ```python
 from findmypy.base import FindMyPyManager
 from findmypy.base import FindMyPyConnection
-import os
 
 APPLE_ID = "your_id_here"
 APPLE_PW = "your_pw_here"
@@ -58,7 +57,6 @@ aAbBcCdDeEfFgGhHiIjJkKlLmMnNoOpPqQrRsStTuUvVwWxXyYzZ2
 ```python
 from findmypy.base import FindMyPyManager
 from findmypy.base import FindMyPyConnection
-import os
 
 APPLE_ID = "your_id_here"
 APPLE_PW = "your_pw_here"

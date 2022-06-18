@@ -1,6 +1,9 @@
-code[class*="language-"] {
-    border-radius: 0.7em;
+pre[class*="language-"] {
+    border-radius: 0.8em;
     font-size: 0.8em;
+}
+
+code[class*="language-"] {
     white-space: pre-wrap;
 }
 

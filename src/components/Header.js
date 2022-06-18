@@ -16,7 +16,7 @@ const Header = () => {
   const { title } = data.site.siteMetadata;
 
   return (
-    <Container maxWidth="xl">
+    <Container maxWidth="lg">
       <AppBar position="static">
         <Toolbar>
           <Typography variant="h6" color="inherit" sx={{ flexGrow: 1 }}>
